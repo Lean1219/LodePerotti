@@ -1,0 +1,218 @@
+.hero {
+    background-image: url(../img/principio.jpeg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: nth($colores, 1);
+    transform: translate(-50, -50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    @include flex(flex, column, center, center);
+    h1 {
+        font-size: nth($font-size, 9);
+        padding: 20px;
+        margin: 10px;
+    }
+    p {
+        font-size: nth($font-size, 5);
+    }
+}
+    .complejos {
+        background-color: nth($colores, 2);
+        text-align: center;
+        .contenedorTarjetas {
+        @include grid(grid, 3, auto auto auto, 20px);
+        padding-bottom: 20px;
+        }
+        .productosTarjetas {
+        width: 350px;
+        height: 350px;
+        border: 2px solid nth($colores, 6);
+        border-radius: 20px;
+        margin: auto;
+        box-shadow: 0px 10px 10px -6px nth($colores, 6);
+        }
+        img {
+        width: 100%;
+        height: 250px;
+        border-radius: 18px;
+        }
+        h3 {
+        font-size: nth($font-size, 3);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .boton {
+        background-color: nth($colores, 5);
+        border-radius: 5px;
+        color: nth($colores, 1);
+        padding: 6px 18px;
+        font-size: 1rem;
+        display: inline-block;
+        width: calc(50% - 20px);
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0px 10px 10px -6px nth($colores, 6);
+        }
+    }
+
+//*Acercade
+
+.tarjetas {
+    background-color: nth($colores, 2);
+    @extend %flex;
+
+    .historia {
+        padding: 15px;
+        margin: 20px;
+        text-align: start;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: nth($font-size, 3);
+        box-shadow: 0px 10px 10px -6px nth($colores, 6)
+    }
+
+    .ubicacion {
+        padding: 15px;
+        margin: 20px;
+        text-align: start;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: nth($font-size, 3);
+        box-shadow: 0px 10px 10px -6px nth($colores, 6)
+    }
+}
+
+//*Servicios
+
+.servicios {
+    text-align: center;
+    background-color: nth($colores, 2);
+    padding: 10px;
+
+    .cartas {
+        margin: 20px;
+        padding: 20px;
+        @extend %flex
+    }
+
+    img {
+        width: 120px;
+        height: 128px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 10px;
+        font-size: nth($font-size, 2);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .cartitas {
+        margin: 20px;
+        padding: 20px;
+        width: 400px;
+        height: 220px;
+        background: nth($colores, 1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 300ms;
+        &:hover {
+            box-shadow: 10px 10px 0px 0px #46A2FD, 20px 20px #83C1FD, 30px 30px 14px #ACD5FD;
+            transform: translate(-5px, -5px);
+        }
+    }
+}
+
+//* Contacto
+
+.contacto {
+    @include flex(flex, column, space-around, center );
+    padding: 100px;
+    background-color: nth($colores, 2);
+    h1{
+    text-align: center;
+    }
+    p{
+    text-align: center;
+    }
+    form{
+        margin: 10px;
+        background-color: nth($colores, 3);
+        border: 2px black solid;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    h2{
+        text-align: center;
+        padding: 10px;
+        font-size: nth($font-size, 4);
+    }
+    textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+        background-color: #45a049;
+        }
+    }
+}
+
+//* Galeria
+.galeria{
+    text-align: center;
+    background-color: nth($colores, 2);
+    h1{
+    padding: 20px;
+    font-size: nth($font-size, 5);
+    }
+    .galeriaContenedor{
+        @include grid(grid, 3, repeat(auto, 3), 10px);
+        padding-bottom: 30px;
+    }
+    .galeriaContenedor .imagen{
+        margin: 1rem  auto ;
+    }
+    .imagen{
+        filter: drop-shadow(10px 10px 15px);
+        border: 1px solid black;
+        width: 350px;
+        border-radius:10px;
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        border: 1px black solid;
+        border-radius: 10px;
+        filter: drop-shadow(10px 10px 15px);
+        cursor: pointer;
+        transition: 300ms;
+        &:hover{
+        transform: scale(1.1);
+        transition: 300ms;
+        }
+        }
+    }
+

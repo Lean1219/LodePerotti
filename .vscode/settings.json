@@ -1,7 +1,14 @@
 {
+    "editor.linkedEditing": true,
+    "terminal.integrated.cursorBlinking": true,
+    "liveServer.settings.NoBrowser": true,
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.useLocalIp": true,
     "path-intellisense.autoSlashAfterDirectory": true,
-    "path-intellisense.extensionOnImport": true,
     "path-intellisense.autoTriggerNextSuggestion": true,
+    "path-intellisense.extensionOnImport": true,
     "path-intellisense.ignoreTsConfigBaseUrl": true,
-    "path-intellisense.showHiddenFiles": true
+    "path-intellisense.showHiddenFiles": true,
+    "path-intellisense.absolutePathTo": "",
+    "editor.renderWhitespace": "all"
 }

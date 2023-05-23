@@ -1,0 +1,29 @@
+.complejos{
+    .contenedorTarjetas{
+        @media screen and ( max-width:1090px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            gap: 20px;
+            }
+        @media screen and ( max-width:720px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            }
+    }
+}
+
+.galeria{
+    .galeriaContenedor{
+        @media screen and (max-width: 1260px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+        }
+        @media screen and ( max-width:900px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            }
+        }
+}

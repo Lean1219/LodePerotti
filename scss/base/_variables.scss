@@ -1,0 +1,52 @@
+//*lista
+$colores: 
+    white,
+    #D5CABD,
+    #cacaca,
+    #161616,
+    #596359,
+    black;
+
+$font-size: 
+    12px,
+    16px,
+    20px,
+    25px
+    30px,
+    35px,
+    40px,
+    45px,
+    50px,
+    65px;
+
+    
+
+//* Extends
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+//* Mixins
+
+@mixin flex($flex, $direction, $justify, $aling){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin grid($grid, $columna, $fila,  $espacio ){
+    display:$grid;
+    grid-template-columns: repeat($columna, 1fr);
+    grid-template-rows: $fila;
+    grid-gap: $espacio;
+}
+
+
+//* Condicional
+

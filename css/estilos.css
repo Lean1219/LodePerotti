@@ -1,2 +1,247 @@
-h1 {
-  color: red; }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.tarjetas, .servicios .cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+header nav {
+  background-color: #cacaca; }
+
+.hero {
+  background-image: url(../img/principio.jpeg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  transform: translate(-50, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero h1 {
+    font-size: 65px;
+    padding: 20px;
+    margin: 10px; }
+  .hero p {
+    font-size: 35px; }
+
+.complejos {
+  background-color: #D5CABD;
+  text-align: center; }
+  .complejos .contenedorTarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    padding-bottom: 20px; }
+  .complejos .productosTarjetas {
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 10px 10px -6px black; }
+  .complejos img {
+    width: 100%;
+    height: 250px;
+    border-radius: 18px; }
+  .complejos h3 {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .complejos .boton {
+    background-color: #596359;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 18px;
+    font-size: 1rem;
+    display: inline-block;
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 10px 10px -6px black; }
+
+.tarjetas {
+  background-color: #D5CABD; }
+  .tarjetas .historia {
+    padding: 15px;
+    margin: 20px;
+    text-align: start;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 10px -6px black; }
+  .tarjetas .ubicacion {
+    padding: 15px;
+    margin: 20px;
+    text-align: start;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 10px -6px black; }
+
+.servicios {
+  text-align: center;
+  background-color: #D5CABD;
+  padding: 10px; }
+  .servicios .cartas {
+    margin: 20px;
+    padding: 20px; }
+  .servicios img {
+    width: 120px;
+    height: 128px; }
+  .servicios h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; }
+  .servicios .cartitas {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 220px;
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms; }
+    .servicios .cartitas:hover {
+      box-shadow: 10px 10px 0px 0px #46A2FD, 20px 20px #83C1FD, 30px 30px 14px #ACD5FD;
+      transform: translate(-5px, -5px); }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+  background-color: #D5CABD; }
+  .contacto h1 {
+    text-align: center; }
+  .contacto p {
+    text-align: center; }
+  .contacto form {
+    margin: 10px;
+    background-color: #cacaca;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 20px; }
+  .contacto label {
+    display: block;
+    font-weight: bold; }
+  .contacto input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+  .contacto h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px 30px; }
+  .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+  .contacto button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+    .contacto button[type="submit"]:hover {
+      background-color: #45a049; }
+
+.galeria {
+  text-align: center;
+  background-color: #D5CABD; }
+  .galeria h1 {
+    padding: 20px;
+    font-size: 35px; }
+  .galeria .galeriaContenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 3);
+    grid-gap: 10px;
+    padding-bottom: 30px; }
+  .galeria .galeriaContenedor .imagen {
+    margin: 1rem  auto; }
+  .galeria .imagen {
+    filter: drop-shadow(10px 10px 15px);
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 10px; }
+  .galeria img {
+    width: 100%;
+    height: 250px;
+    border: 1px black solid;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 15px);
+    cursor: pointer;
+    transition: 300ms; }
+    .galeria img:hover {
+      transform: scale(1.1);
+      transition: 300ms; }
+
+.redes {
+  background-color: #161616;
+  padding: 20px;
+  text-align: center; }
+  .redes .redesWeb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .redes img {
+    width: 40px; }
+  .redes a {
+    margin: 10px; }
+  .redes .finPag {
+    text-align: center;
+    color: white; }
+
+@media screen and (max-width: 1090px) {
+  .complejos .contenedorTarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px; } }
+
+@media screen and (max-width: 720px) {
+  .complejos .contenedorTarjetas {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px; } }
+
+@media screen and (max-width: 1260px) {
+  .galeria .galeriaContenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .galeria .galeriaContenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px; } }

@@ -1,0 +1,19 @@
+.redes {
+    background-color: nth($colores, 4);
+    padding: 20px;
+    text-align: center;
+    .redesWeb {
+    @include flex(flex,row,center,center)
+    }
+    img {
+        width: 40px;
+    }
+    a {
+        margin: 10px;
+    }
+    .finPag {
+        text-align: center;
+        color: white;
+    }
+    
+}
