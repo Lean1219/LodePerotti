@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Poppins:wght@400;500;700&family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -22,9 +24,15 @@ header {
   z-index: 1; }
 
 header nav {
-  background-color: #cacaca; }
+  background-color: #cacaca;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px; }
+  header nav .navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem; }
 
 .hero {
+  font-family: 'Sansita Swashed', cursive;
   background-image: url(../img/principio.jpeg);
   width: 100%;
   height: 80vh;
@@ -46,6 +54,7 @@ header nav {
     font-size: 35px; }
 
 .complejos {
+  font-family: 'Sansita Swashed', cursive;
   background-color: #D5CABD;
   text-align: center; }
   .complejos .contenedorTarjetas {
@@ -81,14 +90,16 @@ header nav {
     box-shadow: 0px 10px 10px -6px black; }
 
 .tarjetas {
-  background-color: #D5CABD; }
+  background-color: #D5CABD;
+  font-family: 'Sansita Swashed', cursive; }
   .tarjetas .historia {
     padding: 15px;
     margin: 20px;
     text-align: start;
     border: 2px solid black;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 35px;
+    font-family: 'Sansita Swashed', cursive;
     box-shadow: 0px 10px 10px -6px black; }
   .tarjetas .ubicacion {
     padding: 15px;
@@ -96,12 +107,14 @@ header nav {
     text-align: start;
     border: 2px solid black;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 35px;
+    font-family: 'Sansita Swashed', cursive;
     box-shadow: 0px 10px 10px -6px black; }
 
 .servicios {
   text-align: center;
   background-color: #D5CABD;
+  font-family: 'Sansita Swashed', cursive;
   padding: 10px; }
   .servicios .cartas {
     margin: 20px;
@@ -131,6 +144,7 @@ header nav {
       transform: translate(-5px, -5px); }
 
 .contacto {
+  font-family: 'Sansita Swashed', cursive;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -175,6 +189,7 @@ header nav {
       background-color: #45a049; }
 
 .galeria {
+  font-family: 'Sansita Swashed', cursive;
   text-align: center;
   background-color: #D5CABD; }
   .galeria h1 {
