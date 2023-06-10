@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Poppins:wght@400;500;700&family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap");
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 ul {
@@ -95,21 +95,33 @@ header nav {
   .tarjetas .historia {
     padding: 15px;
     margin: 20px;
-    text-align: start;
+    text-align: center;
     border: 2px solid black;
     border-radius: 20px;
     font-size: 35px;
     font-family: 'Sansita Swashed', cursive;
     box-shadow: 0px 10px 10px -6px black; }
+  .tarjetas p {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive; }
   .tarjetas .ubicacion {
     padding: 15px;
     margin: 20px;
-    text-align: start;
+    text-align: center;
     border: 2px solid black;
     border-radius: 20px;
     font-size: 35px;
     font-family: 'Sansita Swashed', cursive;
     box-shadow: 0px 10px 10px -6px black; }
+  .tarjetas p {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive; }
 
 .servicios {
   text-align: center;
@@ -143,50 +155,60 @@ header nav {
       box-shadow: 10px 10px 0px 0px #46A2FD, 20px 20px #83C1FD, 30px 30px 14px #ACD5FD;
       transform: translate(-5px, -5px); }
 
-.contacto {
+.tituloFormulario {
+  padding: 20px;
   font-family: 'Sansita Swashed', cursive;
+  background-color: #D5CABD;
+  text-align: center; }
+  .tituloFormulario p {
+    font-size: 20px; }
+
+.contactoFormulario {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 100px;
-  background-color: #D5CABD; }
-  .contacto h1 {
-    text-align: center; }
-  .contacto p {
-    text-align: center; }
-  .contacto form {
-    margin: 10px;
-    background-color: #cacaca;
-    border: 2px black solid;
-    border-radius: 20px;
-    padding: 20px; }
-  .contacto label {
-    display: block;
-    font-weight: bold; }
-  .contacto input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px; }
-  .contacto h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px 30px; }
-  .contacto textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px; }
-  .contacto button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer; }
-    .contacto button[type="submit"]:hover {
-      background-color: #45a049; }
+  padding-bottom: 1%;
+  background-color: #D5CABD;
+  text-align: center; }
+
+form {
+  background-color: #cacaca;
+  border: 2px black solid;
+  border-radius: 20px;
+  padding: 20px; }
+
+label {
+  text-align: start;
+  display: block;
+  font-weight: bold; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+h2 {
+  padding: 10px;
+  font-size: 25px 30px; }
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+button {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  button:hover {
+    background-color: #45a049; }
 
 .galeria {
   font-family: 'Sansita Swashed', cursive;
@@ -205,11 +227,9 @@ header nav {
     margin: 1rem  auto; }
   .galeria .imagen {
     filter: drop-shadow(10px 10px 15px);
-    border: 1px solid black;
-    width: 350px;
-    border-radius: 10px; }
+    width: 250px; }
   .galeria img {
-    width: 100%;
+    width: 80%;
     height: 250px;
     border: 1px black solid;
     border-radius: 10px;
@@ -255,8 +275,14 @@ header nav {
     grid-template-rows: auto auto;
     gap: 20px; } }
 
+.galeria .galeriaContenedor .imagen {
+  width: 100%; }
+
 @media screen and (max-width: 900px) {
   .galeria .galeriaContenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 20px; } }
+
+.galeria .galeriaContenedor .imagen {
+  width: 100%; }
